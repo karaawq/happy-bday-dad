@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+
+    <style>
+        .wrapper {
+            max-width: 600px;
+            margin: 2rem auto;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 0.4rem;
+            grid-auto-flow: dense;
+        }
+
+        .gallery img {
+            display: block;
+            width: 100%;
+            object-fit: cover;
+            background-color: hsl(184, 42%, 81%);
+        }
+
+        .gallery-landscape {
+            aspect-ratio: 9 / 6;
+            grid-column-end: span 2;
+        }
+
+        .gallery-portrait {
+            aspect-ratio: 6 / 9;
+        }
+
+    #footer {
+        position: sticky;
+        bottom: 0;
+        background: white;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+
+    #ft1 {
+        width: 130px;
+        height: 80px;
+        border-radius: 8%;
+        height:auto;
+        margin-left: 7%;
+        margin-right: 3%;
+    }
+
+    #ft2 {
+        width: 130px;
+        height: 80px;
+        border-radius: 8%;
+        height:auto;
+        display: inline;
+    }
+
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="gallery">
+        <img src="./assets/gallery/0.jpg" class="gallery-landscape" />
+        <img src="./assets/gallery/1.jpg" class="gallery-landscape" />
+        <img src="./assets/gallery/2.jpg" class="gallery-landscape" />
+        <img src="./assets/gallery/3.jpg" class="gallery-portrait" />
+        <img src="./assets/gallery/4.jpg" class="gallery-landscape" />
+        <img src="./assets/gallery/5.jpg" class="gallery-landscape" />
+        <img src="./assets/gallery/6.jpg" class="gallery-portrait" />
+        <img src="./assets/gallery/7.jpg" class="gallery-portrait" />
+        <img src="./assets/gallery/8.jpg" class="gallery-portrait" />
+        <img src="./assets/gallery/9.jpg" class="gallery-landscape" />
+        <img src="./assets/gallery/10.jpg" class="gallery-landscape" />
+        <img src="./assets/gallery/11.jpg" class="gallery-portrait" />
+        <img src="./assets/gallery/12.jpg" class="gallery-portrait" />
+        <img src="./assets/gallery/13.jpg" class="gallery-landscape" />
+        <img src="./assets/gallery/14.jpg" class="gallery-landscape" />
+        </div>
+    </div>
+
+
+    <!-- footer -->
+    <div id="footer"> 
+        <a href="./index.html"> <img id="ft1" src="./assets/footerOne.jpg"> </a>
+        <a href="./gallery.html"> <img id="ft2" src="./assets/footerTwo.jpg"> </a>
+    </div>
+</body>
+</html>

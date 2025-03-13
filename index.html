@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> ViewTube </title>
+
+    <style>
+        
+        img {
+            width: 130px;
+            height: 80px;
+            border-radius: 8%;
+        }
+
+        #logo {
+            width:auto;
+            height:30px;
+            margin-bottom: 3%;
+            margin-left: 5px;
+        }
+
+        #logos {
+            height:auto;
+            width: auto;
+            height:25px;
+            display: inline-block;
+            vertical-align: top;
+            margin-top: 4.5px;
+            position:absolute;
+            right: 0%;
+
+        }
+
+        #newTube{
+            display:inline-block;
+            vertical-align:top;
+            margin-left: 1%;
+            /* margin-top: 4.3%; */
+            margin-top: 15px;
+        }
+
+        #pfp {
+            margin-left: 2%;
+            margin-right: 3%;
+            border-radius: 50%;
+            width: 70px;
+            height: 70px
+        }
+       
+        #besidePfp {
+            display:inline-block;
+            vertical-align: top;
+        }
+
+        #profName {
+            font-weight: bold;
+            font-size: 1.3rem;
+            line-height: 0;
+            vertical-align: top;
+            margin-bottom: 13%;
+        }
+        
+        #bio {
+            font-size: 12px;
+        }
+
+        #user {
+            line-height: 0;
+            font-size: 0.7rem;
+            font-weight:bold;
+            margin-bottom: 8%;
+            vertical-align: top;
+        }
+
+        #subs {
+            font-size: 0.7rem;
+        }
+
+        p {
+            font-family: "Roboto", "Arial", sans-serif;
+            margin-left: 6px;
+        }
+
+        h2 {
+            font-family: "Roboto", "Arial", sans-serif;
+            font-size: 1rem;
+            /* line-height: 2.8rem; */
+            font-weight: 750;
+            line-height: 0%;
+            margin-left: 6px;
+            margin-top: 7px;
+            margin-bottom: 4px;
+        }
+
+        #tabs {
+            /* width: 90%; */
+            width: 320px;
+            height: 65px;
+        }
+
+        .videos {
+            display: flex;
+            flex-wrap: wrap;  /* Allow wrapping when screen is too narrow */
+            justify-content: flex-start;  /* Align items to the left */
+        }
+        
+        .video-item {
+            display: flex;
+            margin-bottom: 3px;  /* Space between video items */
+            align-items: flex-start;
+        }
+
+        .thumbnails {
+            margin-bottom: 0px;
+            margin-left: 4.5px;
+            height: 85px;
+            /* height:auto */
+            /* width: 120px; */
+        }
+
+        .thumbnail {
+            margin-right: 10px;  /* Space between thumbnail and views */
+        }
+
+        .vidTitles, .views {
+            /* font-size: 16;
+            font-family: Arial;
+            color:black; */
+            font-family: "Roboto", "Arial", sans-serif;
+            /* font-size: 1.4rem; */
+            font-size: 13px;
+            line-height: 1rem;
+            font-weight:450;
+            display: inline-block;
+            margin-bottom: 0;
+            margin-top: 0.4px;
+            padding-right: 20px;
+        }
+
+        .views {
+            font-size: 10px;
+            color: grey;
+        }
+
+        /* #footer {
+            position: sticky;
+            bottom: 0;
+            background: white;
+            padding-top: 5px;
+            padding-bottom: 5px;
+        } */
+
+        #footer {
+            position: sticky;
+            bottom: 0;
+            background: white;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+        }
+
+        #ft1, #ft2 {
+            width: 130px;
+            height: 80px;
+            border-radius: 8%;
+            height: auto;
+        }
+
+        /* #ft1 {
+            width: 130px;
+            height: 80px;
+            border-radius: 8%;
+            height:auto;
+            margin-left: 7%;
+            margin-right: 3%;
+        }
+        #ft2 {
+            width: 130px;
+            height: 80px;
+            border-radius: 8%;
+            height:auto;
+            display: inline;
+            right: 7%;
+            position:absolute;
+        } */
+
+    </style>
+    <!-- <link rel="stylesheet" style.css/> -->
+
+</head>
+<body>
+
+    <!-- icons -->
+    <div id="icons">
+        <img id="logo" src="./assets/logo.png" >
+        <h2 id="newTube"> ForYouTube </h2>
+        <img id="logos" src="./assets/logos.jpg">   
+    </div>
+
+    <!-- profile -->
+    <div id="profile">
+        <img id="pfp" src="./assets/pfp.JPG" >
+
+        <div id="besidePfp"> 
+            <p id="profName"> Happy Bday Dad! </p>
+            <p id="user"> @angkp </p>
+            <p id="subs"> 17.2K subscribers • 52 videos </p>
+
+        </div>
+    </div>
+
+    <!-- bio -->
+    <p id="bio"> This channel is dedicated to our beloved dad, for his special day :) We love you as much as you love watching youtube on your tiny macbook window!</p>
+
+    <!-- subscribe button? -->
+
+
+
+    <!-- tabs -->
+    <img id="tabs" src="./assets/tabs.jpg">
+    
+    <!-- videos -->
+    <div id="videos">
+    
+        <h2> Videos </h2>
+        <br/>
+
+        <!-- kayden's -->
+        <div class="video-item">
+            <a href="./kayden.html"> <img class="thumbnails" src="./assets/kayden.jpg"></a>
+            <div>
+                <p class="vidTitles"> Q&A with Kayden: Favourite memory, things he loves</p>
+                <p class="views"> 7.12K views • 13 weeks ago  </p>
+            </div>
+        </div>
+
+        <!-- kylie's -->
+        <div class="video-item">
+            <a href="./kylie.html"> <img class="thumbnails" src="./assets/kylie.jpg"></a>
+            <div>
+                <p class="vidTitles"> Five things I love about Dad with Kylie </p>
+                <p class="views"> 25.05K views • 15 weeks ago  </p>
+            </div>
+        </div>
+
+        <!-- kara's -->
+        <div class="video-item">
+            <a href="./kara.html"> <img class="thumbnails" src="./assets/kara.jpg"></a>
+            <div>
+                <p class="vidTitles"> Message with love from Kara! </p>
+                <p class="views"> 13.12K views • 18 weeks ago  </p>
+            </div>
+        </div>
+       
+
+        <!-- mama's -->
+        <div class="video-item">
+            <a href="./mama.html"> <img class="thumbnails" src="./assets/DSCF2751.JPG"></a>
+            <div>
+                <p class="vidTitles"> Well wishes from Mama: Happy birthday KP!</p>
+                <p class="views"> 1.01K views • 60 weeks ago  </p>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- footer -->
+    <div id="footer"> 
+        
+        <a href="./index.html"> <img id="ft1" src="./assets/footerOne.jpg"> </a>
+        <a href="./gallery.html"> <img id="ft2" src="./assets/footerTwo.jpg"> </a>
+
+    </div>
+    
+</body>
+</html>
